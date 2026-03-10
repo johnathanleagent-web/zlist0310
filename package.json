@@ -1,10 +1,10 @@
 {
-  "name": "zillow-scraper",
+  "name": "zillow-scraper-proxy",
   "version": "1.0.0",
-  "description": "Zillow listing extractor with Express proxy",
+  "description": "Zillow listing proxy + Excel export server",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "pip install openpyxl Pillow --quiet --break-system-packages 2>/dev/null || pip install openpyxl Pillow --quiet; node server.js"
   },
   "dependencies": {
     "cors": "^2.8.5",
